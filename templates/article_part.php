@@ -1,4 +1,4 @@
-<div class="col-md-3 my-2">
+<div class="col-md-4 my-2">
     <div class="card" style="width: 18rem;">
         <img src="uploads/articles/<?= $article["image"] ?>" class="card-img-top" alt="<?= $article["title"] ?>">
         <div class="card-body">
