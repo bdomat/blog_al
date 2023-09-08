@@ -27,7 +27,7 @@ $currentPage = basename($_SERVER["SCRIPT_NAME"]);
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav-pills">
                 <?php foreach ($mainMenu as $key => $menuItem) {
-                    if (!$menuItem["exclude"]) { ?>
+                    if (!array_key_exists("exclude", $menuItem)) { ?>
                         <li><a href="<?= $key ?>" class="nav-link px-2 <?php //if ($key === $currentPage) {
                                                                         //echo "active";
                                                                         //} 
